@@ -6,6 +6,11 @@ form {
   text-align: center;
 }
 form input[type=text] {
+  width: 600px;
+  height: 50px;
   border-radius: 20px;
   border-color: blue;
+}
+form input[type=submit] {
+  opacity: 0.5;
 }/*# sourceMappingURL=style.css.map */

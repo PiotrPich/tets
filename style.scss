@@ -5,8 +5,13 @@ form
 {
    text-align: center;
    input[type=text]{
+      width: 600px;
+      height: 50px;
       border-radius: 20px;
       border-color:blue;
    }   
+   input[type=submit]{
+      opacity: 0.5;
+   }
 }
 
