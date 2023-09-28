@@ -6,8 +6,8 @@ form {
   text-align: center;
 }
 form input[type=text] {
-  width: 600px;
-  height: 50px;
+  width: 500px;
+  height: 30px;
   border-radius: 20px;
   border-color: blue;
 }

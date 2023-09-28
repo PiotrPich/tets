@@ -9,10 +9,12 @@
             <h1><a href="index.html">Google Search</a></h1>
         </div>
         <h1 style="text-align:center">Image Search:</h1>
-        <form action="https://lens.google.com/search">
-            <input type="file" name="ep" placeholder="choose image" accept="image/png, image/jpeg">
-            <input type="submit" value="Image Search">
-
+        <form method="get" action="https://www.google.com/search">
+            <input type="text" name="q" placeholder="type here" accept="image/png, image/jpeg">
+            <input type="hidden" name="tbm" value="isch">
+            <div style="text-align: center;">
+                <input type="submit" value="Image Search">
+            </div>
         </form>
     </body>
 </html>
