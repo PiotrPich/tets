@@ -4,29 +4,72 @@
         <title>
             Project 0: Advanced Google search
         </title>
-        <link rel="stylesheet" href="style.css">
         <style>
+            
             input[type=submit] {
                 background-color: blue;
                 border-color: blue;
                 color: white;
+                border-width: 10px;
+                width: 400px;
+                height: 60px;
+            }
+            input[type=text] {
+                width: 400px;
+                height: 20px;
+                margin: 5px;
+                padding: 5px;
+            }
+            .column {
+                float: left;
+                width: auto;
+                padding: 10px;
+            }
+            li {
+                padding: 10px;
+            }
+            #foo {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+
             }
         </style>
     </head>
     <body>
-        <div>
+        <div style="text-align: right;">
             <h1><a href="index.html">Google Search</a></h1>
         </div>
         <h1 style="text-align:center"> Advanced Google Search: </h1>
         <form action="https://www.google.com/search">
             <h3>Find pages with...</h3>
-            <ul>
-                <li>all these words: <input type="text" name="as_q"> Type the important words: tri-colour rat terrier</li>
-                <li>this exact word or phrase: <input type="text" name="as_epq"> Put exact words in quotes: "rat terrier"</li>
-                <li>any of these words: <input type="text" name="as_oq"> Type OR between all the words you want: miniature OR standard</li>
-                <li>none of these words: <input type="text" name="as_eq">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</li>
-            </ul>
-            <input type="submit"  value="Advanced Search">
+            <div>
+                <div class="column">
+                    <ul>
+                        <li>all these words: </li>
+                        <li>this exact word or phrase: </li>
+                        <li>any of these words: </li>
+                        <li>none of these words: </li>
+                    </ul>
+                </div>
+                    
+                <div class="column"> 
+                    <div><input type="text" name="as_q"></div>
+                    <div><input type="text" name="as_epq"></div>
+                    <div><input type="text" name="as_oq"></div>
+                    <div><input type="text" name="as_eq"></div>
+                </div>
+
+                <div class="column">
+                    <ul>
+                        <li>Type the important words: tri-colour rat terrier</li>
+                        <li> Put exact words in quotes: "rat terrier"/li>
+                        <li>any of these words: Type OR between all the words you want: miniature OR standard</li>
+                        <li>none of these words: Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="foo"><input type="submit"  value="Advanced Search"></div>
         </form>
     </body>
 </html>
